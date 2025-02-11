@@ -1,0 +1,101 @@
+.separator {
+  padding: 5rem 0;
+}
+
+.align-section {
+  text-align: left;
+}
+.card-general {
+  text-align: left;
+  background-color: #002366;
+  color: white;
+}
+
+.card {
+  text-align: center !important;
+  width: 75%;
+  display: flex;
+  justify-self: center;
+}
+
+/* Aplica solo a tarjetas con la clase .custom-card */
+.custom-card .card-header {
+  position: relative;
+  //   background-color: #f8f9fa;
+}
+
+.custom-card .circle-img {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* border: 5px solid white; */
+  background-color: #fff;
+  /* padding: 5px; */
+  border-radius: 50%;
+}
+
+.custom-card .circle-img img {
+  width: 100px; /* Ajusta el tamaño del círculo */
+  height: 100px;
+  object-fit: cover;
+}
+
+.responsive-adjustment {
+  margin-top: 5rem;
+}
+@media (min-width: 992px) {
+  .responsive-adjustment {
+    margin-top: 0;
+  }
+  .card-general {
+    display: flex;
+  }
+
+  .section-left {
+    flex: 4;
+    padding-left: 3rem;
+  }
+
+  .section-right {
+    flex: 2.5;
+    //   padding-right: 3rem;
+  }
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 20px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.carousel {
+  padding: 0 9rem;
+}
+
+@media (max-width: 767px) {
+  .carousel-item .row {
+    margin-bottom: 1rem; // Espaciado entre las imágenes en móvil
+  }
+
+  .carousel {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-item .row {
+    margin-bottom: 0; // Sin margen entre las imágenes en desktop
+  }
+}

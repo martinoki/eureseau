@@ -1,0 +1,10 @@
+.navbar-nav > li {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: 992px) {
+  .navbar-size {
+    justify-content: center;
+  }
+}
