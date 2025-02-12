@@ -1,0 +1,70 @@
+<div class="header">
+  <span>Sobre Nosotros</span>
+</div>
+
+<div>
+  <div>
+    <div class="welcome-title main-title">
+      <span> Bienvenidos al Estudio Pedreira Felix Pedreira </span>
+    </div>
+    <div class="subtitle">
+      <span>
+        Un despacho de abogados que representa en la Argentina al EureseaU
+        (Network of Lawyers). Sus elegantes oficinas están situadas en la Ciudad
+        de Buenos Aires, Capital de la República Argentina.
+      </span>
+    </div>
+  </div>
+  <div>
+    <div class="welcome-title">Historia</div>
+    <div class="subtitle">
+      <span>
+        La firma fue creada por sus propios miembros en el año 1965; los
+        Doctores Jorge Eduardo Pedreira y la Doctora Teresa E. Félix de
+        Pedreira, quienes son abogados reconocidos con una vasta experiencia
+        profesional, y caracterizados por una gran reputación en integridad y
+        calidad, la que brinda a los clientes una absoluta confidencialidad y
+        respeto. En 1999 se incorpora la Dra. María Teresa Pedreira quien
+        relanzando el estudio con una nueva visión y desafíos en esta profesión.
+      </span>
+    </div>
+  </div>
+  <div>
+    <div class="welcome-title">Objetivo</div>
+    <div class="subtitle">
+      <span
+        >Brindar nuestra amplia experiencia y conocimientos en la evaluación y
+        análisis de cuestiones jurídico-empresariales, de un mercado muy
+        exigente en constante cambio, a empresas nacionales y extranjeras. Con
+        un asesoramiento y una atención integral, con permanente apoyo y
+        seguimiento de un equipo de especialistas consultores multidisciplinaria
+        de gran capacidad.
+      </span>
+      <span>
+        Respaldados por nuestra celeridad, honestidad, seriedad y compromiso con
+        el cliente para lograr la efectividad en la resolución de conflictos
+      </span>
+      <span>
+        Creemos en el ejercicio de la abogacía como una herramienta en la
+        resolución de conflictos y contribuir a un mundo amigable
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="titulares">
+  <div class="title">TITULARES ASOCIADOS</div>
+
+  <div
+    style="display: flex; justify-content: space-between; text-align: center"
+  >
+    <div *ngFor="let item of titulares">
+      <div class="card">
+        <img width="250px" [src]="item.imagen" alt="" />
+        <span>{{ item.nombre }}</span>
+        <span>{{ item.cargo }}</span>
+      </div>
+      <button class="btn" type="button" class="btn btn-primary">LEER MAS</button>
+    </div>
+  </div>
+</div>

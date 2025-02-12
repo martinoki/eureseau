@@ -1,0 +1,88 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+/* ------- customize primary button color -------- */
+$mynewcolor: #002366;
+
+.btn {
+  font-family: "latoRegular";
+  width: 248px;
+  color: white;
+  margin: 2rem 0;
+}
+
+.btn-primary {
+  @include button-variant(
+    $mynewcolor,
+    darken($mynewcolor, 7.5%),
+    darken($mynewcolor, 10%),
+    lighten($mynewcolor, 5%),
+    lighten($mynewcolor, 10%),
+    darken($mynewcolor, 30%)
+  );
+}
+
+.btn-outline-primary {
+  @include button-outline-variant(
+    $mynewcolor,
+    #222222,
+    lighten($mynewcolor, 5%),
+    $mynewcolor
+  );
+}
+.header {
+  background-color: #002366;
+  color: white;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-family: "prozaLibre";
+  font-size: 35px;
+}
+
+.welcome-title {
+  font-family: "prozaLibre";
+  font-size: 25px;
+  border-image: linear-gradient(to right, #b2b2b2 0%, #ffffff 100%) 1;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding: 0px;
+}
+
+.main-title {
+  font-size: 30px;
+}
+
+.subtitle {
+  font-family: "latoRegular";
+  font-size: 20px;
+  color: #828282;
+  font-weight: bold;
+}
+
+.titulares {
+  padding: 0 4rem;
+  background-color: #4682b4;
+  font-family: "latoRegular";
+
+  .title {
+    color: white;
+    text-align: center;
+    font-family: "prozaLibre";
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 10px;
+  }
+
+  .card {
+    border-radius: 10px;
+    background-color: #ddebff;
+    width: 344px;
+    height: 381px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
