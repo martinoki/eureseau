@@ -1,26 +1,13 @@
-<div class="footer" style="background-color: #002366; color: white; display: flex; justify-content: space-between;">
+<div class="footer">
   <div>
-    <div>
-      <img src="icons/address.png" alt="Address" />
+    <div class="item" *ngFor="let text of texts">
+      <img class="icon" [src]="'icons/' + text.icon" [alt]="text.alt" />
       <span
-        ><b>Dirección:</b> Calle Uruguay Nº 390, piso 15, Of. "F" y "G" C.P.
-        (1015) - Ciudad Autónoma de Buenos Aires, Argentina
+        ><b>{{ text.title }}:</b> {{ text.text }}
       </span>
     </div>
-    <div>
-      <img src="icons/phone.png" alt="Phone" />
-      <span><b>Telefono:</b> (5411) 4373-0861 </span>
-    </div>
-    <div>
-      <img src="icons/phone.png" alt="Phone" />
-      <span><b>Celulares de contacto:</b></span>
-    </div>
-    <div>
-      <img src="icons/mail.png" alt="Mail" />
-      <span><b>Mail:</b> info&#64;estudiopedreira.com.ar </span>
-    </div>
   </div>
-  <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+  <div class="footer-logo">
     <img width="100px" src="logo_footer.png" alt="Logo" />
     <span>Estudio Pedreria</span>
     <span>Felix Pedreira</span>

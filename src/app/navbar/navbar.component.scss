@@ -3,8 +3,39 @@
   padding-right: 30px;
 }
 
+.header {
+  text-align: center;
+  font-size: 16px;
+  font-family: "pontoSans";
+  color: #4b4b4b;
+
+  .text-header {
+    padding-left: 1rem;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar-size {
     justify-content: center;
   }
+
+  .header {
+    font-size: 40px;
+    text-align: center;
+    padding-left: 1rem;
+    font-family: "pontoSans";
+
+    .text-header {
+      padding-left: 1rem;
+    }
+  }
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav-item{
+  letter-spacing: 5px;
+  text-wrap-mode: nowrap;
 }

@@ -60,9 +60,11 @@ $mynewcolor: #002366;
   font-size: 20px;
   color: #828282;
   font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
-.titulares {
+.titulares-container {
   padding: 0 4rem;
   background-color: #4682b4;
   font-family: "latoRegular";
@@ -74,6 +76,7 @@ $mynewcolor: #002366;
     font-size: 25px;
     line-height: 30px;
     letter-spacing: 10px;
+    padding: 5rem 0;
   }
 
   .card {
@@ -84,5 +87,31 @@ $mynewcolor: #002366;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.about-us-container {
+  padding: 0 4rem;
+  padding-top: 6rem;
+}
+
+.about-us-text {
+  padding-left: 7rem;
+  // padding-right: 7rem;
+  text-align: center;
+}
+
+.pictures {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .pictures {
+    flex-direction: column;
+    .card {
+      width: auto;
+    }
   }
 }

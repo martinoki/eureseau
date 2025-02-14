@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { CarouselComponent } from '../carousel/carousel.component';
 declare var bootstrap: any;
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [CarouselComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

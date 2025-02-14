@@ -1,11 +1,11 @@
-<div style="text-align: center">
+<div class="header">
   <img width="50px" src="logo_header.png" alt="" />
-  <span> Estudio Pedreria Felix Pedreira </span>
+  <span class="text-header"> Estudio Jurídico Pedreira Felix Pedreira </span>
 </div>
 
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid d-flex justify-content-between">
-    <!-- Botón para menú en dispositivos pequeños -->
+
     <button
       class="navbar-toggler"
       type="button"
@@ -18,9 +18,49 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Menú colapsable -->
+
     <div class="collapse navbar-collapse navbar-size" id="navbarNav">
       <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a
+          routerLinkActive="active"
+            class="nav-link"
+            [routerLink]="['/home']"
+            >HOME</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+          routerLinkActive="active" class="nav-link" [routerLink]="['/about-us']">SOBRE NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+          <a
+          routerLinkActive="active" class="nav-link" href="#">EURESEAU</a>
+        </li>
+        <li class="nav-item">
+          <a
+          routerLinkActive="active" class="nav-link" href="#">AREA DE PRACTICA</a>
+        </li>
+        <li class="nav-item">
+          <a
+          routerLinkActive="active" class="nav-link" href="#">CASOS NOTABLES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACTO</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item active">
           <a
             class="nav-link"
@@ -47,4 +87,4 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->

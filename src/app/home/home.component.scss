@@ -5,6 +5,41 @@
 .align-section {
   text-align: left;
 }
+
+.about-us-title {
+  font-family: "pontoSans";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.about-us-text {
+  font-family: "pontoSans";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24.3px;
+  margin: 3rem 0rem;
+}
+
+.about-us-profile-name {
+  font-family: "latoRegular";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15.6px;
+  letter-spacing: 25%;
+}
+
+.about-us-profile-text {
+  font-family: "latoRegular";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24.3px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #828282;
+}
+
 .card-general {
   text-align: left;
   background-color: #002366;
@@ -13,7 +48,7 @@
 
 .card {
   text-align: center !important;
-  width: 75%;
+  width: 82%;
   display: flex;
   justify-self: center;
 }
@@ -84,6 +119,86 @@
   padding: 0 9rem;
 }
 
+.events-title {
+  font-family: "pontoSans";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.events-date {
+  font-family: "latoRegular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.4px;
+  letter-spacing: 5px;
+  padding-top: 1rem;
+  color: #4f4f4f;
+}
+
+.event-description {
+  font-family: "latoRegular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #828282;
+}
+
+.info-container {
+  display: flex;
+  color: white;
+  flex-direction: row;
+
+  .title {
+    font-family: "pontoSans";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    padding: 3rem 0;
+  }
+
+  .description {
+    font-family: "pontoSans";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22.5px;
+    padding-bottom: 5rem;
+  }
+
+  .resolution {
+    background-color: #4682b4;
+    flex: 3;
+    padding-left: 2rem;
+
+    .description {
+      width: 500px;
+    }
+  }
+
+  .analysis {
+    background-color: #6ca0dc;
+    flex: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    .analysis-top {
+      flex: 1;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .analysis-bottom {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .carousel-item .row {
     margin-bottom: 1rem; // Espaciado entre las imágenes en móvil
@@ -91,6 +206,15 @@
 
   .carousel {
     padding: 0 5rem;
+  }
+
+  .info-container {
+    flex-direction: column;
+    .resolution {
+      .description {
+        width: auto;
+      }
+    }
   }
 }
 
