@@ -5,7 +5,6 @@
 
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid d-flex justify-content-between">
-
     <button
       class="navbar-toggler"
       type="button"
@@ -18,32 +17,33 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-
     <div class="collapse navbar-collapse navbar-size" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a
-          routerLinkActive="active"
-            class="nav-link"
-            [routerLink]="['/home']"
+          <a routerLinkActive="active" class="nav-link" [routerLink]="['/home']"
             >HOME</a
           >
         </li>
         <li class="nav-item">
           <a
-          routerLinkActive="active" class="nav-link" [routerLink]="['/about-us']">SOBRE NOSOTROS</a>
+            routerLinkActive="active"
+            class="nav-link"
+            [routerLink]="['/about-us']"
+            >SOBRE NOSOTROS</a
+          >
         </li>
         <li class="nav-item">
           <a
-          routerLinkActive="active" class="nav-link" href="#">EURESEAU</a>
+            routerLinkActive="active"
+            class="nav-link"
+            [routerLink]="['/practice-areas']"
+            >AREA DE PRACTICA</a
+          >
         </li>
         <li class="nav-item">
-          <a
-          routerLinkActive="active" class="nav-link" href="#">AREA DE PRACTICA</a>
-        </li>
-        <li class="nav-item">
-          <a
-          routerLinkActive="active" class="nav-link" href="#">CASOS NOTABLES</a>
+          <a routerLinkActive="active" class="nav-link" href="#"
+            >CASOS NOTABLES</a
+          >
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">CONTACTO</a>
