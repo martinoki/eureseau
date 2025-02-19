@@ -7,3 +7,5 @@
 .env.production.local
 .vscode
 .dist
+/dist
+/dist/*

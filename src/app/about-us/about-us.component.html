@@ -55,16 +55,44 @@
 <div class="titulares-container">
   <div class="title">TITULARES ASOCIADOS</div>
 
-  <div
-  class="pictures"
-  >
+  <div class="pictures">
     <div *ngFor="let item of titulares">
       <div class="card">
         <img width="250px" [src]="item.imagen" alt="" />
         <span>{{ item.nombre }}</span>
         <span>{{ item.cargo }}</span>
       </div>
-      <button class="btn" type="button" class="btn btn-primary">LEER MAS</button>
+      <button
+        (click)="selectTitular(item);"
+        class="btn"
+        type="button"
+        class="btn btn-primary"
+      >
+        LEER MAS
+      </button>
+    </div>
+  </div>
+
+  <div #scrollTarget class="titular-description">
+    <div class="titular-title">
+      {{ selectedTitular.nombre }}
+    </div>
+    <div class="titular-subtitle">
+      {{ selectedTitular.cargo }}
+    </div>
+    <div class="description collapse show" id="collapseExample">
+      {{ selectedTitular.description }}
+    </div>
+    <div class="arrow-container">
+      <a
+        data-bs-toggle="collapse"
+        href="#collapseExample"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+        (click)="isExpanded = !isExpanded"
+      >
+      <i style="font-size: 50px" class="arrow" [ngClass]="isExpanded ? 'top' : 'bottom'"></i>
+      </a>
     </div>
   </div>
 </div>
