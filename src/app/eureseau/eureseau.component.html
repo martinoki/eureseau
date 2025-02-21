@@ -1,0 +1,100 @@
+<div class="header">
+  <span>EURESEAU</span>
+</div>
+
+<div class="eureseau-container">
+  <div>
+    <div class="profile-title main-title">
+      <span>Perfil</span>
+    </div>
+    <div class="subtitle eureseau-text">
+      <span>
+        Euréseau es una asociación mundial de firmas profesionales
+        independientes que atienden a clientes de todo el mundo. Nos enorgullece
+        ser parte de dicha red. Los miembros de las firmas son especialistas
+        locales pero con una mentalidad internacional. Los clientes disfrutan de
+        un entorno amistoso, personal y de máxima confianza cuando son
+        acompañados por nuestras firmas miembro independientes en el país de su
+        interés individual.
+      </span>
+    </div>
+  </div>
+  <div>
+    <div class="profile-title">Historia</div>
+    <div class="subtitle text-center">
+      <span>
+        Euréseau nació en la década de los 90 como una red de abogados europeos
+        que buscaban crear una plataforma colaborativa para ofrecer servicios
+        jurídicos a nivel internacional. Lo que comenzó como una pequeña red
+        centrada en el derecho corporativo y comercial, pronto creció y se
+        expandió fuera de Europa, alcanzando América, Asia y África. Esta
+        expansión fue impulsada por la creciente necesidad de asesoría legal que
+        abarque múltiples jurisdicciones, dado el aumento de la globalización en
+        los negocios y las relaciones comerciales. Con el tiempo, Euréseau se ha
+        consolidado como un referente en el sector legal global, manteniendo
+        siempre una clara visión de adaptabilidad y crecimiento. A medida que
+        crecía la red, Euréseau amplió su cartera de servicios, incorporando
+        áreas de especialización como litigios internacionales, arbitraje,
+        derecho de familia, derecho laboral, derecho fiscal y propiedad
+        intelectual. Esta evolución permitió a la red adaptarse a los cambios en
+        el panorama jurídico mundial, manteniendo su relevancia y ofreciendo
+        servicios innovadores. Durante las últimas décadas, Euréseau ha recibido
+        numerosos premios y reconocimientos internacionales, lo que subraya su
+        compromiso con la excelencia jurídica, la innovación en la práctica
+        legal y su capacidad para resolver problemas complejos en un contexto
+        global. Hoy en día, Euréseau no solo sigue siendo un referente en
+        derecho corporativo, sino que también es reconocida por su capacidad
+        para abordar áreas emergentes del derecho como la ciberseguridad, la
+        inteligencia artificial y el derecho ambiental, manteniéndose siempre a
+        la vanguardia del cambio en el ámbito legal internacional.
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="official-page-container">
+  <a href="http://www.eureseau.com/" target="_blank">
+    <div class="official-page-title-container">
+      <div class="official-page-title">PÁGINA OFICIAL EURESEAU</div>
+    </div>
+  </a>
+</div>
+
+<div class="representatives-container">
+  <div class="representatives-title text-center">
+    <span>REPRESENTANTES INTERNACIONALES</span>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-4 col-12"
+        *ngFor="let column of [column1, column2, column3]"
+      >
+        <div class="representative-item" *ngFor="let item of column">
+          <h5>{{ item.country }}</h5>
+          <span class="representative-link">
+            <a [href]="item.representatives.link" target="_blank">{{
+              item.representatives.text
+            }}</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="events-container">
+  <div class="events-title text-center">
+    <span>EVENTOS INTERNACIONALES</span>
+  </div>
+
+  <div class="events-container-items">
+    <div class="event-item" *ngFor="let event of events">
+      <img width="270px" src="events/{{ event.image }}" alt="{{ event.title }}" />
+      <div class="event-item-title">{{ event.title }}</div>
+      <div class="event-item-place">{{ event.place }}</div>
+      <div class="event-item-date">{{ event.date }}</div>
+    </div>
+  </div>
+</div>
