@@ -1,0 +1,66 @@
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div
+      *ngFor="let item of data; let i = index"
+      [ngClass]="{ 'carousel-item': true, active: i === 0 }"
+    >
+      <div class="row justify-content-center alignment">
+        <div class="col-12 col-md-4 card">
+          <div class="img-container">
+            <img
+              width="150px"
+              [src]="item.image"
+              class="d-block"
+              alt="carousel image"
+            />
+          </div>
+          <p class="carousel-title">{{ item.title }}</p>
+          <a class="carousel-link text-center" (click)="selectItem(item)">LEER MAS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExample"
+    data-bs-slide="prev"
+  >
+    <i style="font-size: 50px" class="arrow left"></i>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExample"
+    data-bs-slide="next"
+  >
+    <i style="font-size: 50px" class="arrow right"></i>
+  </button>
+</div>
+
+<div #scrollTarget class="item-description">
+  <div class="item-title">
+    {{ selectedItem.title }}
+  </div>
+  <div class="description collapse show" id="collapseExample">
+    <div *ngFor="let item of selectedItem.description">
+      <div>{{ item }}</div>
+      <br />
+    </div>
+  </div>
+  <div class="arrow-container">
+    <a
+      data-bs-toggle="collapse"
+      href="#collapseExample"
+      aria-expanded="false"
+      aria-controls="collapseExample"
+      (click)="isExpanded = !isExpanded"
+    >
+      <i
+        style="font-size: 50px"
+        class="arrow"
+        [ngClass]="isExpanded ? 'top' : 'bottom'"
+      ></i>
+    </a>
+  </div>
+</div>

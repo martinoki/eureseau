@@ -1,4 +1,4 @@
-<img class="image" src="palacio.jpg" alt="Palacio" />
+<img width="100%" class="image" src="palacio.jpg" alt="Palacio" />
 
 <div class="separator"></div>
 
@@ -32,7 +32,9 @@
           </div>
         </div>
         <div class="card-body" style="margin-top: 4rem">
-          <h5 class="card-title about-us-profile-name">DR. JORGE EDUARDO PEDREIRA</h5>
+          <h5 class="card-title about-us-profile-name">
+            DR. JORGE EDUARDO PEDREIRA
+          </h5>
           <p class="card-text about-us-profile-text">
             "Valoramos el trabajo en equipo y la dedicación a nuestros clientes.
             Cada caso es un nuevo desafío que afrontamos con ética,
@@ -47,10 +49,11 @@
   <!-- <div class="card-footer text-muted">2 days ago</div> -->
 </div>
 
+<div class="events-title" style="text-align: center; font-size: 32px">
+  Eventos Internacionales
+</div>
 
-<div class="events-title" style="text-align: center; font-size: 32px">Eventos Internacionales</div>
-
-<app-carousel></app-carousel>
+<app-carousel [images]="images"></app-carousel>
 
 <div class="info-container">
   <div class="resolution">
@@ -67,9 +70,7 @@
       disposiciones.
     </div>
   </div>
-  <div
-    class="analysis"
-  >
+  <div class="analysis">
     <div class="analysis-top">
       <div class="title">Análisis de Jurisprudencia</div>
       <div class="description">
@@ -79,9 +80,14 @@
         la práctica legal.
       </div>
     </div>
-    <div class="analysis-bottom" style="background-color: #aec6cf; color: white; flex: 1">
+    <div
+      class="analysis-bottom"
+      style="background-color: #aec6cf; color: white; flex: 1"
+    >
       <div class="title">Tecnología y Derecho</div>
-      <div class="description">Impacto de la IA y la Ciberseguridad en el Ámbito Legal.</div>
+      <div class="description">
+        Impacto de la IA y la Ciberseguridad en el Ámbito Legal.
+      </div>
     </div>
   </div>
 </div>

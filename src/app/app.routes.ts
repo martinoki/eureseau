@@ -5,6 +5,6 @@ import { PracticeAreasComponent } from './practice-areas/practice-areas.componen
 export const routes: Routes = [
   { path: 'home', title: 'Home', component: HomeComponent },
   { path: 'about-us', title: 'About Us', component: AboutUsComponent },
-  { path: 'practice-areas', title: 'About Us', component: PracticeAreasComponent },
+  { path: 'practice-areas', title: 'Area de Práctica', component: PracticeAreasComponent },
   { path: '**', title: 'Home', component: HomeComponent },
 ];

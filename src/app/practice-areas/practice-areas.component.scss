@@ -8,3 +8,17 @@
   font-family: "prozaLibre";
   font-size: 35px;
 }
+
+.presentation {
+  font-family: "prozaLibre";
+  font-size: 20px;
+  text-align: center;
+  padding: 3rem;
+}
+
+
+@media (min-width: 992px) {
+  .presentation {
+    padding: 8rem;
+  }
+}

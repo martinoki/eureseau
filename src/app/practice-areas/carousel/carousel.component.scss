@@ -1,0 +1,138 @@
+// .carousel-inner {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .carousel-item img {
+//   transition: transform 0.5s ease-in-out;
+// }
+
+// @media (max-width: 768px) {
+//   .carousel-item {
+//     display: flex;
+//     justify-content: center;
+//   }
+// }
+
+.carousel-title {
+  padding: 0 1rem;
+  font-family: "latoRegular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.4px;
+  letter-spacing: 5px;
+  padding-top: 1rem;
+  color: #4f4f4f;
+}
+
+.event-description {
+  font-family: "latoRegular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #828282;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 20px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.bottom {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.top {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-link {
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  text-align: left;
+  cursor: pointer;
+  font-family: "latoRegular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14.4px;
+  letter-spacing: 5px;
+  color: #333333;
+  text-decoration: underline;
+}
+
+.card {
+  border-radius: 15px;
+  border-width: 0.5px;
+  border-color: black;
+}
+
+.alignment{
+  text-align: center;
+
+}
+
+.item-description {
+  background-color: #ddebff;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 3rem;
+
+  .item-title {
+    font-family: "latoRegular";
+    font-weight: 400;
+    color: black;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+  }
+
+  .item-subtitle {
+    font-family: "latoRegular";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4f4f4f;
+    padding-top: 1rem;
+    padding-bottom: 2rem
+    
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2px;
+  }
+}
+.arrow-container {
+  text-align: right;
+}

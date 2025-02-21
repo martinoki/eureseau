@@ -113,7 +113,7 @@ $mynewcolor: #002366;
   padding: 2rem;
 
   .titular-title {
-    font-family: Lato;
+    font-family: "latoRegular";
     font-weight: 400;
     color: black;
     font-size: 30px;
@@ -122,7 +122,7 @@ $mynewcolor: #002366;
   }
 
   .titular-subtitle {
-    font-family: Lato;
+    font-family: "latoRegular";
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -142,6 +142,12 @@ $mynewcolor: #002366;
 }
 
 @media (max-width: 767px) {
+
+  .about-us-text{
+    padding-left: 0;
+    text-align: left;
+  }
+
   .pictures {
     flex-direction: column;
     .card {
