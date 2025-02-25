@@ -1,0 +1,37 @@
+<div class="header">
+  <span>Experiencias</span>
+</div>
+
+<div class="experiences-container">
+  <div
+    class="experience-item text-center"
+    *ngFor="let experience of experiences.slice(0, 3)"
+  >
+    <span class="experience-description">{{ experience.description }}</span>
+    <br />
+    <span class="experience-name">{{ experience.name }}</span>
+    <span class="experience-name">{{ experience.place }}</span>
+  </div>
+</div>
+
+<div class="experiences-container">
+  <div
+    class="experience-item text-center"
+    *ngFor="let experience of experiences.slice(3, 5)"
+  >
+    <span class="experience-description">{{ experience.description }}</span>
+    <br />
+    <span class="experience-name">{{ experience.name }}</span>
+    <span class="experience-name">{{ experience.place }}</span>
+  </div>
+</div>
+
+<div class="trust-companies-container">
+  <div class="events-title text-center">
+    <span>EMPRESAS QUE CONFÍAN EN NOSOTROS</span>
+  </div>
+
+  <div class="companies text-center">
+    <img class="image" src="experiences/companies.png" alt="companies" />
+  </div>
+</div>

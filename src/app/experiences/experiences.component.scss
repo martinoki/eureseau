@@ -1,0 +1,71 @@
+.header {
+  background-color: #002366;
+  color: white;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-family: "prozaLibre";
+  font-size: 35px;
+}
+
+.experiences-container {
+  font-family: "latoRegular";
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  .experience-item {
+    width: 400px;
+    height: 235px;
+    background-color: #4682b4;
+    border-radius: 15px;
+    padding: 1.5rem 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .experience-description {
+    color: #eaeaea;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .experience-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+.trust-companies-container {
+  font-family: "latoRegular";
+  padding: 4rem 0;
+
+  .events-title {
+    font-size: 24px;
+    line-height: 28.82px;
+    margin: 4rem 0;
+  }
+
+  .companies {
+    .image {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .experiences-container {
+    flex-direction: column;
+    align-items: center;
+
+    .experience-item {
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+    }
+  }
+}
