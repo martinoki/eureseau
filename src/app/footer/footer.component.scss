@@ -28,8 +28,18 @@
   text-align: center;
 }
 
+.contact-footer {
+  font-family: "latoRegular";
+  font-size: 23px;
+  text-align: center;
+  padding: 0 6rem;
+}
+
 @media (max-width: 767px) {
   .footer {
     flex-direction: column-reverse;
+  }
+  .contact-footer {
+    padding: 0;
   }
 }

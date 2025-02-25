@@ -4,6 +4,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { PracticeAreasComponent } from './practice-areas/practice-areas.component';
 import { EureseauComponent } from './eureseau/eureseau.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
   { path: 'home', title: 'Home', component: HomeComponent },
@@ -15,9 +16,10 @@ export const routes: Routes = [
   },
   { path: 'eureseau', title: 'Eureseau', component: EureseauComponent },
   {
-    path: 'experiencies',
+    path: 'experiences',
     title: 'Casos Notables',
     component: ExperiencesComponent,
   },
+  { path: 'contact', title: 'Contacto', component: ContactComponent },
   { path: '**', title: 'Home', component: HomeComponent },
 ];

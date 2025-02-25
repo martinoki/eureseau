@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -35,4 +36,5 @@ export class FooterComponent {
       text: 'info@estudiopedreira.com.ar',
     },
   ];
+  constructor(readonly router: Router) {}
 }

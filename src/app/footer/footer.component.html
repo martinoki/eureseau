@@ -1,15 +1,30 @@
 <div class="footer">
-  <div>
-    <div class="item" *ngFor="let text of texts">
-      <img class="icon" [src]="'icons/' + text.icon" [alt]="text.alt" />
-      <span
-        ><b>{{ text.title }}:</b> {{ text.text }}
-      </span>
+  <div *ngIf="router.url !== '/contact'; else contactFooter">
+    <div>
+      <div class="item" *ngFor="let text of texts">
+        <img class="icon" [src]="'icons/' + text.icon" [alt]="text.alt" />
+        <span
+          ><b>{{ text.title }}:</b> {{ text.text }}
+        </span>
+      </div>
+    </div>
+    <div class="footer-logo">
+      <img width="200px" src="logo.png" alt="Logo" />
+      <span>Estudio Pedreria</span>
+      <span>Felix Pedreira</span>
     </div>
   </div>
-  <div class="footer-logo">
-    <img width="200px" src="logo.png" alt="Logo" />
-    <span>Estudio Pedreria</span>
-    <span>Felix Pedreira</span>
-  </div>
+  <ng-template #contactFooter>
+    <div class="contact-footer">
+      <div>
+        Proporcionamos servicios de asesoramiento altamente especializado a
+        clientes, tanto nacionales como internacionales, con un enfoque dedicado
+        a garantizar el más alto estándar de calidad y excelencia en cada
+        aspecto de nuestro trabajo. Nuestra misión es ofrecer un nivel de
+        sofisticación y profesionalismo que supere las expectativas, asegurando
+        que cada cliente reciba soluciones a medida que cumplan con los
+        estándares más rigurosos.
+      </div>
+    </div>
+  </ng-template>
 </div>
