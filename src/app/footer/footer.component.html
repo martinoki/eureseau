@@ -1,5 +1,8 @@
 <div class="footer">
-  <div *ngIf="router.url !== '/contact'; else contactFooter">
+  <div
+    *ngIf="router.url !== '/contact'; else contactFooter"
+    class="footer-container"
+  >
     <div>
       <div class="item" *ngFor="let text of texts">
         <img class="icon" [src]="'icons/' + text.icon" [alt]="text.alt" />

@@ -63,7 +63,7 @@
         <span>{{ item.cargo }}</span>
       </div>
       <button
-        (click)="selectTitular(item);"
+        (click)="selectTitular(item)"
         class="btn"
         type="button"
         class="btn btn-primary"
@@ -91,8 +91,49 @@
         aria-controls="collapseExample"
         (click)="isExpanded = !isExpanded"
       >
-      <i style="font-size: 50px" class="arrow" [ngClass]="isExpanded ? 'top' : 'bottom'"></i>
+        <i
+          style="font-size: 50px"
+          class="arrow"
+          [ngClass]="isExpanded ? 'top' : 'bottom'"
+        ></i>
       </a>
+    </div>
+  </div>
+</div>
+
+<div class="collaborators">
+  <div class="text-center collaborators-title fw-bold">COLABORADORES</div>
+  <div class="collaborators-container">
+    <div class="collaborators-item text-center">
+      <span class="fw-bold collaborators-name"
+        >DR. JULIO CRISTOBAL GABRIELLI</span
+      >
+      <span class="collaborators-description"
+        >Especialista en derecho penal</span
+      >
+    </div>
+    <div class="collaborators-item text-center">
+      <span class="fw-bold collaborators-name"
+        >DR. JORGE ALEXANDER YAFALIAN GKAZARIAN</span
+      >
+      <span class="collaborators-description"
+        >Especialista y postgrado en Derecho Laboral</span
+      >
+    </div>
+  </div>
+</div>
+
+<div class="eureseau-welcome">
+  <div class="eureseau-welcome-title text-center">
+    Bienvenidos a Eureseau, el estudio jurídico dedicado a la excelencia en el
+    ámbito del derecho laboral.
+  </div>
+
+  <div *ngFor="let item of eureseauText">
+    <div class="eureseau-welcome-text text-center">
+        <div style="width: 1175px;">
+        {{ item }}
+      </div>
     </div>
   </div>
 </div>

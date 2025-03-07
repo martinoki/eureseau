@@ -1,7 +1,7 @@
 .header {
-  background-color: #002366;
+  background-color: rgba(1, 0, 102, 1);
   color: white;
-  height: 150px;
+  height: 280px;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -48,7 +48,7 @@
     font-family: "latoRegular";
     font-size: 26px;
     letter-spacing: 3px;
-    padding: 4rem 0;
+    padding: 6rem 0;
   }
 
   .representative-item {

@@ -2,9 +2,15 @@
   font-family: "latoRegular";
   background-color: #002366;
   color: white;
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   padding: 3rem;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .item {
     padding: 1rem 0;
@@ -38,6 +44,11 @@
 @media (max-width: 767px) {
   .footer {
     flex-direction: column-reverse;
+
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+    }
   }
   .contact-footer {
     padding: 0;

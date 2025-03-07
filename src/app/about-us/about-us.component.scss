@@ -35,7 +35,7 @@ $mynewcolor: #002366;
 .header {
   background-color: #002366;
   color: white;
-  height: 150px;
+  height: 280px;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -69,6 +69,7 @@ $mynewcolor: #002366;
   padding: 0 4rem;
   background-color: #4682b4;
   font-family: "latoRegular";
+  padding-bottom: 10rem;
 
   .title {
     color: white;
@@ -110,7 +111,8 @@ $mynewcolor: #002366;
 .titular-description {
   background-color: #ddebff;
   border-radius: 20px;
-  padding: 2rem;
+  padding: 3rem;
+  margin-top: 5rem;
 
   .titular-title {
     font-family: "latoRegular";
@@ -128,8 +130,7 @@ $mynewcolor: #002366;
     line-height: 24px;
     color: #4f4f4f;
     padding-top: 1rem;
-    padding-bottom: 2rem
-    
+    padding-bottom: 2rem;
   }
 
   .description {
@@ -141,9 +142,59 @@ $mynewcolor: #002366;
   }
 }
 
-@media (max-width: 767px) {
+.collaborators {
+  background-color: rgba(174, 198, 207, 1);
+  font-family: "latoRegular";
+  padding: 7rem 0;
 
-  .about-us-text{
+  .collaborators-title {
+    font-size: 24px;
+    letter-spacing: 8px;
+    padding: 5rem 0;
+  }
+
+  .collaborators-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 16%;
+
+    .collaborators-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .collaborators-name {
+        font-size: 13px;
+        letter-spacing: 3px;
+      }
+
+      .collaborators-description {
+        font-size: 15px;
+        margin: 1.5rem 0;
+        color: rgba(79, 79, 79, 1);
+      }
+    }
+  }
+}
+
+.eureseau-welcome {
+  font-family: "pontoSans";
+  padding: 12rem 0;
+
+  .eureseau-welcome-title {
+    font-size: 22px;
+  }
+
+  .eureseau-welcome-text {
+    font-size: 18px;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us-text {
     padding-left: 0;
     text-align: left;
   }
@@ -153,6 +204,22 @@ $mynewcolor: #002366;
     .card {
       width: auto;
     }
+  }
+
+  .description {
+  }
+
+  .collaborators-container {
+    flex-direction: column;
+
+    .collaborators-item {
+      margin: 2rem 0;
+    }
+  }
+
+  .eureseau-welcome-text {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 /* Animación de despliegue suave */
@@ -198,4 +265,3 @@ $mynewcolor: #002366;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
-
