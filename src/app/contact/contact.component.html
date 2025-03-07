@@ -4,7 +4,13 @@
 
 <div class="contact-container">
   <div class="contact-card">
-    <div>
+    <div class="item d-flex" *ngFor="let text of contactTexts">
+      <img class="icon" height="20px" [src]="'icons/' + text.icon" [alt]="text.alt" />
+      <span
+        ><b>{{ text.title }}:</b> {{ text.text }}
+      </span>
+    </div>
+    <!-- <div>
       <span
         ><b>Dirección:</b> Calle Uruguay Nº 390, piso 15, Of. "F" y "G"
       </span>
@@ -16,7 +22,7 @@
       <br />
       <br />
       <span><b>E-mail:</b> infoestudiopedreira&#64;gmail.com</span>
-    </div>
+    </div> -->
   </div>
 </div>
 

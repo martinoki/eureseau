@@ -27,7 +27,7 @@ export class FooterComponent {
       title: 'Celulares de contacto',
       alt: 'Phone',
       icon: 'phone.png',
-      text: '',
+      text: '+54 1166594146',
     },
     {
       title: 'Mail',
