@@ -1,3 +1,32 @@
+textarea {
+  resize: none;
+}
+
+.form-control{
+  border-radius: 20px !important;
+}
+
+.label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-family: "latoRegular";
+}
+
+.map {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 650px;
+}
+
+.form {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-row{
+  gap: 4rem;
+}
+
 .header {
   background-color: #002366;
   color: white;
@@ -29,6 +58,7 @@
 
 .contact-form {
   display: flex;
+  padding: 0px 2rem;
 }
 
 .whatsapp-btn-container {
@@ -70,7 +100,29 @@
     }
   }
 
+  .contact-form {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+
+  .map {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .form {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
   .whatsapp-btn-title {
     width: auto;
+    margin: 0 2rem;
   }
 }

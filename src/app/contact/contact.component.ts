@@ -1,14 +1,24 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  contactForm = new FormGroup({
+    name: new FormControl(''),
+    lastName: new FormControl(''),
+    company: new FormControl(''),
+    position: new FormControl(''),
+    email: new FormControl(''),
+    message: new FormControl(''),
+    country: new FormControl(''),
+  });
+
   contactTexts = [
     {
       title: 'Dirección',
@@ -35,4 +45,10 @@ export class ContactComponent {
       text: 'info@estudiopedreira.com.ar',
     },
   ];
+
+  get whatsappText() {
+    return encodeURIComponent(
+      `*Nombre:* ${this.contactForm.value.name} ${this.contactForm.value.lastName}\n*Empresa:* ${this.contactForm.value.company}\n*Cargo:* ${this.contactForm.value.position}\n*Email:* ${this.contactForm.value.email}\n\n${this.contactForm.value.message}`
+    );
+  }
 }

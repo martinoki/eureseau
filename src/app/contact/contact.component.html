@@ -5,61 +5,84 @@
 <div class="contact-container">
   <div class="contact-card">
     <div class="item d-flex" *ngFor="let text of contactTexts">
-      <img class="icon" height="20px" [src]="'icons/' + text.icon" [alt]="text.alt" />
+      <img
+        class="icon"
+        height="20px"
+        [src]="'icons/' + text.icon"
+        [alt]="text.alt"
+      />
       <span
         ><b>{{ text.title }}:</b> {{ text.text }}
       </span>
     </div>
-    <!-- <div>
-      <span
-        ><b>Dirección:</b> Calle Uruguay Nº 390, piso 15, Of. "F" y "G"
-      </span>
-      <br />
-      <span>C.P. (1015) - Ciudad Autónoma de Buenos Aires, Argentina</span>
-      <br />
-      <br />
-      <span><b>Telefonos:</b> + 54 11 4373-0861 - +54 11 6659-4146 </span>
-      <br />
-      <br />
-      <span><b>E-mail:</b> infoestudiopedreira&#64;gmail.com</span>
-    </div> -->
   </div>
 </div>
 
-<!-- <div class="contact-form">
-  <div>
-
-    <img width="50%" src="contact/maps.png" alt="maps" />
+<div class="contact-form">
+  <div style="flex: 1; text-align: right">
+    <img class="map" src="contact/maps2.png" alt="maps" />
   </div>
-  <div>
-    <form>
-      <div class="d-flex">
-        <div class="form-floating">
-        <input type="text" class="form-control" id="floatingInput" placeholder="NOMBRE">
-        <label for="floatingInput">NOMBRE</label>
+  <div class="form" style="flex: 1; background: rgba(232, 232, 232, 1); padding: 2rem">
+    <form [formGroup]="contactForm">
+      <div class="d-flex mb-4 form-row">
+        <div class="form-group">
+          <label class="label" for="floatingName">NOMBRE</label>
+          <input formControlName="name" type="text" class="form-control" id="floatingName" />
+        </div>
+        <div class="form-group">
+          <label class="label" for="floatingLastName">APELLIDO</label>
+          <input formControlName="lastName" type="text" class="form-control" id="floatingLastName" />
+        </div>
       </div>
-      <div class="form-floating">
-        <input type="text" class="form-control" id="floatingPassword" placeholder="APELLIDO">
-        <label for="floatingPassword">APELLIDO</label>
+      <div class="d-flex mb-4 form-row">
+        <div class="form-group">
+          <label class="label" for="floatingCompany">EMPRESA</label>
+          <input formControlName="company" type="text" class="form-control" id="floatingCompany" />
+        </div>
+        <div class="form-group">
+          <label class="label" for="floatingPosition">CARGO</label>
+          <input formControlName="position" type="text" class="form-control" id="floatingPosition" />
+        </div>
       </div>
-    </div> -->
-    <!-- <div>
-      <input type="text" placeholder="EMPRESA" />
-      <input type="text" placeholder="CARGO" />
-    </div>
-    <div>
-      <input type="email" placeholder="EMAIL" />
-      <input type="text" placeholder="PAIS" />
-    </div> -->
-      <!-- <textarea placeholder="MENSAJE"></textarea> -->
-    <!-- </form>
+      <div class="d-flex mb-4 form-row">
+        <div class="form-group">
+          <label class="label" for="floatingEmail">EMAIL</label>
+          <input formControlName="email" type="email" class="form-control" id="floatingEmail" />
+        </div>
+        <div class="form-group">
+          <label class="label" for="floatingCountry">PAIS</label>
+          <input formControlName="country" type="text" class="form-control" id="floatingCountry" />
+        </div>
+      </div>
+      <div class="d-flex mb-3">
+        <div form-row class="form-group" style="width: 100%; height: 100%;">
+          <label class="label" for="floatingMessage">MENSAJE</label>
+          <textarea
+            style="width: 100%; height: 180px;"
+            class="form-control"
+            id="floatingMessage"
+            formControlName="message"
+          ></textarea>
+        </div>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+        <label class="form-check-label" for="autoSizingCheck2">
+          <!-- <span>Acepto los <a href="#">términos y condiciones</a></span> -->
+          He leido y acepto la politica de privacidad
+        </label>
+      </div>
+    </form>
   </div>
-</div> -->
+</div>
 
 <div class="whatsapp-btn-container">
   <div class="whatsapp-btn-title-container">
-      <a href="https://wa.me/1234567890" target="_blank">
+    <a
+      href="https://wa.me/5492964485364?text={{ whatsappText }}"
+      target="_blank"
+    >
       <div class="whatsapp-btn-title">ESCRIBENOS A WHATSAPP</div>
     </a>
-    </div>
+  </div>
 </div>
