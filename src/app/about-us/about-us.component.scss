@@ -38,7 +38,7 @@ $mynewcolor: #002366;
   height: 280px;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   font-family: "prozaLibre";
   font-size: 35px;
 }
@@ -107,6 +107,10 @@ $mynewcolor: #002366;
   display: flex;
   justify-content: space-between;
   text-align: center;
+
+  .titular-position{
+    max-width: 250px;
+  }
 }
 .titular-description {
   background-color: #ddebff;

@@ -60,7 +60,7 @@
       <div class="card">
         <img width="250px" [src]="item.imagen" alt="" />
         <span>{{ item.nombre }}</span>
-        <span>{{ item.cargo }}</span>
+        <span class="titular-position">{{ item.cargo }}</span>
       </div>
       <button
         (click)="selectTitular(item)"
