@@ -12,19 +12,19 @@ declare var bootstrap: any;
 export class HomeComponent implements OnInit {
   images = [
     {
-      image: 'carousel/carousel1.png',
-      date: '10 ABRIL, 2017',
-      description: 'Evento internacional Eureseau realizado en Paris',
-    },
-    {
       image: 'carousel/carousel2.png',
       date: '10 ABRIL, 2017',
       description: 'Evento internacional Eureseau realizado en Paris',
     },
     {
+      image: 'carousel/carousel1.png',
+      date: '5 ABRIL, 2017',
+      description: 'Evento comunicacional internacional. Conferencia en Sao Pablo',
+    },
+    {
       image: 'carousel/carousel3.png',
-      date: '10 ABRIL, 2017',
-      description: 'Evento internacional Eureseau realizado en Paris',
+      date: '30 MARZO, 2023',
+      description: 'Congreso de estudios en Latinoamerica, liderado por un integrante de nuestro equipo.',
     },
   ];
 

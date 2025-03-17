@@ -10,7 +10,7 @@
 }
 
 .presentation {
-  font-family: "prozaLibre";
+  font-family: "Pontano";
   font-size: 20px;
   text-align: center;
   padding: 3rem;
@@ -20,5 +20,7 @@
 @media (min-width: 992px) {
   .presentation {
     padding: 8rem;
+    padding-left: 10rem;
+    padding-right: 13rem;
   }
 }

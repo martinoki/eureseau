@@ -1,23 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-  font-family: 'pontoSans';
-  src: url('./assets/pontoSans.ttf');
+  font-family: "Pontano";
+  src: url("./assets/pontano/PontanoSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'latoRegular';
-  src: url('./assets/Lato-Regular.ttf');
+  font-family: "Pontano";
+  src: url("./assets/pontano/PontanoSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal; 
 }
 
 @font-face {
-  font-family: 'latoRegular';
-  font-weight: bold;
-  src: url('./assets/Lato-Bold.ttf');
+  font-family: "Pontano";
+  src: url("./assets/pontano/PontanoSans-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/lato/Lato-Thin.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/lato/Lato-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/lato/Lato-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/lato/Lato-Bold.ttf");
+  font-weight: 700;
+  font-style: normal; 
+}
+
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/lato/Lato-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/lato/Lato-ThinItalic.ttf");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/lato/Lato-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic; 
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/lato/Lato-BoldItalic.ttf");  
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/lato/Lato-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic;
+}
+
 
 @font-face {
   font-family: 'prozaLibre';
-  src: url('./assets/ProzaLibre-Regular.ttf');
+  src: url('./assets/proza/ProzaLibre-Regular.ttf');
 }
 
 @font-face {

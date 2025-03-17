@@ -17,7 +17,7 @@
   </div>
   <div>
     <div class="welcome-title">Historia</div>
-    <div class="subtitle">
+    <div class="subtitle text-center px-4">
       <span>
         La firma fue creada por sus propios miembros en el año 1965; los
         Doctores Jorge Eduardo Pedreira y la Doctora Teresa E. Félix de
@@ -31,7 +31,7 @@
   </div>
   <div>
     <div class="welcome-title">Objetivo</div>
-    <div class="subtitle">
+    <div class="subtitle text-center px-4">
       <span
         >Brindar nuestra amplia experiencia y conocimientos en la evaluación y
         análisis de cuestiones jurídico-empresariales, de un mercado muy
@@ -40,10 +40,14 @@
         seguimiento de un equipo de especialistas consultores multidisciplinaria
         de gran capacidad.
       </span>
+      <br/>
+      <br/>
       <span>
         Respaldados por nuestra celeridad, honestidad, seriedad y compromiso con
         el cliente para lograr la efectividad en la resolución de conflictos
       </span>
+      <br/>
+      <br/>
       <span>
         Creemos en el ejercicio de la abogacía como una herramienta en la
         resolución de conflictos y contribuir a un mundo amigable
@@ -57,19 +61,25 @@
 
   <div class="pictures">
     <div *ngFor="let item of titulares">
-      <div class="card">
-        <img width="250px" [src]="item.imagen" alt="" />
-        <span>{{ item.nombre }}</span>
-        <span class="titular-position">{{ item.cargo }}</span>
-      </div>
-      <button
+      <div class="card selected" [ngClass]="{ 'selected': item.id === selectedTitular.id, 'not-selected': item.id !== selectedTitular.id }">
+        <img class="mt-4" style="margin-left: 2rem" height="260px" width="275px" [src]="item.imagen" alt="" />
+        <button
         (click)="selectTitular(item)"
-        class="btn"
         type="button"
-        class="btn btn-primary"
+        class="btn read-more2 btn-primary"
       >
         LEER MAS
       </button>
+        <span class="titular-name">{{ item.nombre }}</span>
+        <span class="titular-position">{{ item.cargo }}</span>
+      </div>
+      <!-- <button
+        (click)="selectTitular(item)"
+        type="button"
+        class="btn read-more btn-primary"
+      >
+        LEER MAS
+      </button> -->
     </div>
   </div>
 
@@ -105,7 +115,7 @@
   <div class="text-center collaborators-title fw-bold">COLABORADORES</div>
   <div class="collaborators-container">
     <div class="collaborators-item text-center">
-      <span class="fw-bold collaborators-name"
+      <span class="collaborators-name"
         >DR. JULIO CRISTOBAL GABRIELLI</span
       >
       <span class="collaborators-description"

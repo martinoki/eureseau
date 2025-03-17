@@ -7,7 +7,7 @@
       <div class="item" *ngFor="let text of texts">
         <img class="icon" [src]="'icons/' + text.icon" [alt]="text.alt" />
         <span
-          ><b>{{ text.title }}:</b> {{ text.text }}
+          ><b><span style="letter-spacing: 3px; font-weight: 800;">{{ text.title }}</span>:</b> <span style="font-weight: 400; letter-spacing: 1px; margin-left: 1rem;">{{ text.text }}</span>
         </span>
       </div>
     </div>

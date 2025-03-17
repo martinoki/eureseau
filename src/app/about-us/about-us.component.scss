@@ -5,11 +5,26 @@
 /* ------- customize primary button color -------- */
 $mynewcolor: #002366;
 
-.btn {
-  font-family: "latoRegular";
+.read-more {
+  font-family: "Lato";
   width: 248px;
   color: white;
+}
+
+.read-more2 {
+  width: 248px;
+  height: 42px;
+  color: white;
   margin: 2rem 0;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-top: -2.25rem;
 }
 
 .btn-primary {
@@ -57,50 +72,57 @@ $mynewcolor: #002366;
 }
 
 .subtitle {
-  font-family: "latoRegular";
+  font-family: "Lato";
   font-size: 20px;
   color: #828282;
   font-weight: bold;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
 }
 
 .titulares-container {
-  padding: 0 4rem;
+  padding: 0 9rem;
   background-color: #4682b4;
-  font-family: "latoRegular";
+  font-family: "Lato";
   padding-bottom: 10rem;
 
   .title {
     color: white;
     text-align: center;
-    font-family: "prozaLibre";
-    font-size: 25px;
+    font-family: "Lato";
+    font-size: 30px;
     line-height: 30px;
     letter-spacing: 10px;
-    padding: 5rem 0;
+
+    padding-bottom: 5rem;
+    padding-top: 8rem;
+    font-weight: bold;
   }
 
   .card {
-    border-radius: 10px;
-    background-color: #ddebff;
+    // border-radius: 10px;
+    border: 0.5px solid rgba(185, 185, 185, 1);
+    box-shadow: 0px 4px 6px 2px rgba(255, 255, 255, 0.25);
+
     width: 344px;
-    height: 381px;
+    height: 432px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
   }
 }
 
 .about-us-container {
-  padding: 0 4rem;
+  padding: 0 9rem;
   padding-top: 6rem;
 }
 
 .about-us-text {
-  padding-left: 7rem;
-  // padding-right: 7rem;
+  padding-left: 3rem;
   text-align: center;
+  padding-right: 3rem;
+  padding-top: 1.25rem;
 }
 
 .pictures {
@@ -108,8 +130,33 @@ $mynewcolor: #002366;
   justify-content: space-between;
   text-align: center;
 
-  .titular-position{
+  .titular-name {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    max-width: 280px;
+  }
+
+  .titular-position {
+    margin-top: 1rem;
     max-width: 250px;
+    font-size: 15px;
+  }
+
+  .not-selected {
+    background: radial-gradient(100% 150% at 50% 0%, #ddebff 0%, #4682b4 50%),
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(102, 102, 102, 0.1) 100%
+      );
+  }
+
+  .selected {
+    background: radial-gradient(100% 100% at 50% 0%, #ddebff 30%, #4682b4 135%),
+      linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
   }
 }
 .titular-description {
@@ -119,21 +166,22 @@ $mynewcolor: #002366;
   margin-top: 5rem;
 
   .titular-title {
-    font-family: "latoRegular";
+    font-family: "Lato";
     font-weight: 400;
     color: black;
     font-size: 30px;
     line-height: 36px;
-    letter-spacing: 3px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
   }
 
   .titular-subtitle {
-    font-family: "latoRegular";
+    font-family: "Lato";
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: #4f4f4f;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     padding-bottom: 2rem;
   }
 
@@ -148,13 +196,14 @@ $mynewcolor: #002366;
 
 .collaborators {
   background-color: rgba(174, 198, 207, 1);
-  font-family: "latoRegular";
-  padding: 7rem 0;
+  font-family: "Lato";
+  padding-bottom: 7rem;
+  padding-top: 5rem;
 
   .collaborators-title {
     font-size: 24px;
     letter-spacing: 8px;
-    padding: 5rem 0;
+    padding-bottom: 5rem;
   }
 
   .collaborators-container {
@@ -169,6 +218,8 @@ $mynewcolor: #002366;
 
       .collaborators-name {
         font-size: 13px;
+        font-weight: 900;
+        font-family: "Lato";
         letter-spacing: 3px;
       }
 
@@ -182,8 +233,9 @@ $mynewcolor: #002366;
 }
 
 .eureseau-welcome {
-  font-family: "pontoSans";
-  padding: 12rem 0;
+  font-family: "Pontano";
+  padding-bottom: 7.5rem;
+  padding-top: 7.5rem;
 
   .eureseau-welcome-title {
     font-size: 22px;
@@ -191,13 +243,22 @@ $mynewcolor: #002366;
 
   .eureseau-welcome-text {
     font-size: 18px;
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     display: flex;
     justify-content: center;
   }
 }
 
 @media (max-width: 767px) {
+  .titulares-container{
+    padding: 3rem 3rem;
+  }
+
+  .about-us-container {
+    padding: 0 4rem;
+    padding-top: 6rem;
+  }
+
   .about-us-text {
     padding-left: 0;
     text-align: left;
@@ -207,9 +268,9 @@ $mynewcolor: #002366;
     flex-direction: column;
     .card {
       width: auto;
+      margin-bottom: 2rem;
     }
   }
-
 
   .collaborators-container {
     flex-direction: column;

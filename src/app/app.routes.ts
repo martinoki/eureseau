@@ -17,7 +17,7 @@ export const routes: Routes = [
   { path: 'eureseau', title: 'Eureseau', component: EureseauComponent },
   {
     path: 'experiences',
-    title: 'Casos Notables',
+    title: 'Experiencias',
     component: ExperiencesComponent,
   },
   { path: 'contact', title: 'Contacto', component: ContactComponent },

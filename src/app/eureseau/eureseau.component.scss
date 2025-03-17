@@ -11,7 +11,7 @@
 
 .profile-title {
   font-family: "prozaLibre";
-  font-size: 25px;
+  font-size: 30px;
   border-image: linear-gradient(to right, #b2b2b2 0%, #ffffff 100%) 1;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -23,32 +23,33 @@
 }
 
 .subtitle {
-  font-family: "latoRegular";
+  font-family: "Pontano";
   font-size: 20px;
-  color: #828282;
-  font-weight: bold;
+  font-weight: 400;
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
+  padding-right: 6rem;
+  text-align: center;
 }
 
 .eureseau-container {
-  padding: 0 4rem;
+  padding: 0 9rem;
   padding-top: 6rem;
-}
-
-.eureseau-text {
-  padding-left: 7rem;
-  text-align: center;
 }
 
 .representatives-container {
   background-color: #b0c4de;
 
   .representatives-title {
-    font-family: "latoRegular";
-    font-size: 26px;
+    font-family: "Lato";
     letter-spacing: 3px;
     padding: 6rem 0;
+    font-weight: 900;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 7px;
   }
 
   .representative-item {
@@ -58,9 +59,15 @@
   .representative-link {
     background-color: white;
     color: #525252;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 1rem;
     margin-left: 1rem;
+    border-radius: 5px;
+    max-width: 300px;
+    display: block;
+    height: 24px;
+    font-family: "Lato";
+    font-size: 14px;
+    color: #525252;
   }
 }
 
@@ -74,10 +81,20 @@ a {
   .eureseau-text {
     padding-left: 0;
     text-align: left;
+    padding-right: 0;
+  }
+  
+  .eureseau-container{
+    padding: 0 2rem;
+  }
+
+  .subtitle{
+    padding-right: 0;
   }
 }
 
 @media (min-width: 992px) {
+  
   .row {
     display: flex;
   }
@@ -108,11 +125,11 @@ a {
   text-align: center;
   color: #fece03;
   background-color: #010066;
-  width: 30rem;
-  padding: 1rem;
-  font-family: "latoRegular";
+  padding: 2.5rem 10rem;
+  font-family: "Lato";
   font-size: 25px;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
+  font-weight: 700;
 }
 
 .official-page-title-container {
@@ -121,7 +138,7 @@ a {
 }
 
 .events-container {
-  font-family: "latoRegular";
+  font-family: "Lato";
   font-size: 26px;
   letter-spacing: 3px;
   padding: 4rem 0;

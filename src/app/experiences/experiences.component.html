@@ -2,7 +2,7 @@
   <span>Experiencias</span>
 </div>
 
-<div class="experiences-container">
+<div class="experiences-container" style="margin-top: 4rem">
   <div
     class="experience-item text-center"
     *ngFor="let experience of experiences.slice(0, 3)"
@@ -12,6 +12,43 @@
     <span class="experience-name">{{ experience.name }}</span>
     <span class="experience-name">{{ experience.place }}</span>
   </div>
+  <!-- <div
+    class="contenedor experience-item text-center"
+    *ngFor="let experience of experiences.slice(0, 3)"
+  >
+    <div class="contenido experience-description">
+      <p>{{ experience.description }}</p>
+    </div>
+    <div
+      class="expandir-contraer"
+    >
+      <div style="display: flex; flex-direction: column; text-align: left">
+        <span
+          style="
+            font-family: Lato;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+          "
+          >{{ experience.name }}</span
+        >
+        <span
+          style="
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 100%;
+            letter-spacing: 0%;
+          "
+          >{{ experience.place }}</span
+        >
+      </div>
+      <div class="medio">
+        <i style="font-size: 50px" class="arrow top"></i>
+      </div>
+    </div>
+  </div> -->
 </div>
 
 <div class="experiences-container">
@@ -32,6 +69,10 @@
   </div>
 
   <div class="companies text-center">
-    <img class="image" src="experiences/companies_enhanced.png" alt="companies" />
+    <img
+      class="image"
+      src="experiences/companies_enhanced.png"
+      alt="companies"
+    />
   </div>
 </div>

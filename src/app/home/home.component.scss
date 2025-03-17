@@ -1,10 +1,10 @@
-.card{
+.card {
   border: none;
 }
 
-.carousel{
+.carousel {
   padding-bottom: 8rem;
-
+  padding-top: 3rem;
 }
 
 .separator {
@@ -16,22 +16,23 @@
 }
 
 .about-us-title {
-  font-family: "pontoSans";
+  font-family: "Pontano";
   font-size: 32px;
   font-weight: 400;
   line-height: 41px;
 }
 
 .about-us-text {
-  font-family: "pontoSans";
-  font-weight: 400;
+  font-family: "Pontano";
+  font-weight: 100;
   font-size: 15px;
   line-height: 24.3px;
-  margin: 3rem 0rem;
+  margin-top: 2.5rem;
+  letter-spacing: 0.2px;
 }
 
 .about-us-profile-name {
-  font-family: "latoRegular";
+  font-family: "Lato";
   font-weight: 400;
   font-size: 13px;
   line-height: 15.6px;
@@ -39,14 +40,31 @@
 }
 
 .about-us-profile-text {
-  font-family: "latoRegular";
+  font-family: "Lato";
   font-weight: 400;
   font-style: italic;
   font-size: 15px;
-  line-height: 24.3px;
-  letter-spacing: 0%;
   text-align: center;
   color: #828282;
+  font-family: Lato;
+  padding: 0 1rem;
+}
+
+.btn-profile {
+  font-family: Lato;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 2rem;
+
+  .link {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+  }
 }
 
 .card-general {
@@ -60,13 +78,19 @@
 
 .card {
   text-align: center !important;
-  width: 82%;
+  width: 70%;
   display: flex;
   justify-self: center;
+  border-radius: 40px;
 }
 
-/* Aplica solo a tarjetas con la clase .custom-card */
+
+.custom-card{
+  width: 330px
+}
+
 .custom-card .card-header {
+  
   position: relative;
   //   background-color: #f8f9fa;
 }
@@ -104,12 +128,13 @@
   }
 
   .section-left {
-    flex: 4;
-    padding-left: 3rem;
+    flex: 2.9;
+    padding-left: 2rem;
   }
 
   .section-right {
     flex: 2.5;
+    margin-top: 2rem;
     //   padding-right: 3rem;
   }
 }
@@ -136,7 +161,7 @@
 // }
 
 .events-title {
-  font-family: "pontoSans";
+  font-family: "Pontano";
   font-weight: 400;
   font-size: 32px;
   line-height: 41px;
@@ -147,7 +172,7 @@
 }
 
 .events-date {
-  font-family: "latoRegular";
+  font-family: "Lato";
   font-weight: 400;
   font-size: 12px;
   line-height: 14.4px;
@@ -157,7 +182,7 @@
 }
 
 .event-description {
-  font-family: "latoRegular";
+  font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -170,7 +195,7 @@
   flex-direction: row;
 
   .title {
-    font-family: "pontoSans";
+    font-family: "Pontano";
     font-weight: 400;
     font-size: 32px;
     line-height: 41px;
@@ -178,7 +203,7 @@
   }
 
   .description {
-    font-family: "pontoSans";
+    font-family: "Pontano";
     font-weight: 400;
     font-size: 15px;
     line-height: 22.5px;
@@ -216,6 +241,10 @@
 }
 
 @media (max-width: 767px) {
+  .custom-card{
+    width: 240px
+  }
+
   .carousel-item .row {
     margin-bottom: 1rem; // Espaciado entre las imágenes en móvil
   }
@@ -238,5 +267,5 @@
 //   .carousel-item .row {
 //     margin-bottom: 0; // Sin margen entre las imágenes en desktop
 //   }
-  
+
 // }

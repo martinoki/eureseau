@@ -20,6 +20,7 @@ export class AboutUsComponent {
   }
   titulares = [
     {
+      id: 1,
       nombre: 'Dr. Jorge Eduardo Pedreira',
       cargo: 'Titular y fundador del estudio',
       imagen: 'papa_tere_enhanced.png',
@@ -27,6 +28,7 @@ export class AboutUsComponent {
         'En el área financiera y bancaria, nuestro estudio ofrece asesoría integral a entidades financieras, empresas y particulares. Nos especializamos en la estructuración de préstamos, financiamiento corporativo, garantías, reestructuración de deudas y cumplimiento normativo. Nuestro equipo de abogados cuenta con una vasta experiencia en la negociación de contratos financieros, así como en la resolución de disputas derivadas de estas operaciones. Además, brindamos apoyo en procesos regulatorios y ante organismos de control. Trabajamos en estrecha colaboración con nuestros clientes para asegurar soluciones efectivas, personalizadas y en cumplimiento con la legislación vigente.',
     },
     {
+      id: 2,
       nombre: 'Dra. Maria Teresa Pedreira',
       cargo: 'Especialista en derecho laboral y asesoramiento de empresas',
       imagen: 'tere_enhanced.png',
@@ -34,6 +36,7 @@ export class AboutUsComponent {
         'En el área financiera y bancaria, nuestro estudio ofrece asesoría integral a entidades financieras, empresas y particulares. Nos especializamos en la estructuración de préstamos, financiamiento corporativo, garantías, reestructuración de deudas y cumplimiento normativo. Nuestro equipo de abogados cuenta con una vasta experiencia en la negociación de contratos financieros, así como en la resolución de disputas derivadas de estas operaciones. Además, brindamos apoyo en procesos regulatorios y ante organismos de control. Trabajamos en estrecha colaboración con nuestros clientes para asegurar soluciones efectivas, personalizadas y en cumplimiento con la legislación vigente.',
     },
     {
+      id: 3,
       nombre: 'Dra. Teresa E. Felix de Pedreira',
       cargo: 'Doctora en derecho societario',
       imagen: 'mama_tere_enhanced.png',

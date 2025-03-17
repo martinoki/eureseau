@@ -1,5 +1,5 @@
 .footer {
-  font-family: "latoRegular";
+  font-family: "Lato";
   background-color: #002366;
   color: white;
   // display: flex;
@@ -14,6 +14,10 @@
 
   .item {
     padding: 1rem 0;
+    font-family: "Lato";
+    font-size: 15px;
+    display: flex;
+    align-items: center;
 
     .icon {
       margin-right: 1rem;
@@ -22,7 +26,7 @@
 }
 
 .footer-logo {
-  font-family: "pontoSans";
+  font-family: "Pontano";
   font-weight: 400;
   font-size: 25px;
   line-height: 32.03px;
@@ -36,7 +40,7 @@
 }
 
 .contact-footer {
-  font-family: "latoRegular";
+  font-family: "Lato";
   font-size: 23px;
   text-align: center;
   padding: 0 6rem;

@@ -28,5 +28,5 @@
 </div>
 
 <div class="cards">
-  <app-carousel [data]="data"></app-carousel>
+  <app-carousel [data]="data" (selectedItemEvent)="onSelectedItem($event)"></app-carousel>
 </div>
