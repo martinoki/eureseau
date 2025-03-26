@@ -2,64 +2,95 @@
   <span>Experiencias</span>
 </div>
 
-<div class="experiences-container" style="margin-top: 4rem">
+<div class="experiences-container">
   <div
-    class="experience-item text-center"
-    *ngFor="let experience of experiences.slice(0, 3)"
-  >
-    <span class="experience-description">{{ experience.description }}</span>
-    <br />
-    <span class="experience-name">{{ experience.name }}</span>
-    <span class="experience-name">{{ experience.place }}</span>
-  </div>
-  <!-- <div
     class="contenedor experience-item text-center"
+    [ngClass]="{ closed: !experience.opened }"
     *ngFor="let experience of experiences.slice(0, 3)"
   >
-    <div class="contenido experience-description">
+    <div
+      class="contenido experience-description"
+      [ngClass]="{ closed: !experience.opened }"
+    >
       <p>{{ experience.description }}</p>
     </div>
-    <div
-      class="expandir-contraer"
-    >
-      <div style="display: flex; flex-direction: column; text-align: left">
-        <span
-          style="
-            font-family: Lato;
-            font-weight: 800;
-            font-size: 20px;
-            line-height: 100%;
-            letter-spacing: 0%;
-          "
-          >{{ experience.name }}</span
-        >
-        <span
-          style="
-            font-family: Poppins;
-            font-weight: 400;
-            font-size: 11px;
-            line-height: 100%;
-            letter-spacing: 0%;
-          "
-          >{{ experience.place }}</span
-        >
-      </div>
-      <div class="medio">
-        <i style="font-size: 50px" class="arrow top"></i>
+    <div class="btn-experience" (click)="toggleExperience(experience)">
+      <div class="btn-shape-container">
+        <div class="btn-shape">
+          <svg
+            viewBox="0 0 100 50"
+            preserveAspectRatio="none"
+            style="width: 180px; top: -34px; left: 80px"
+          >
+            <path
+              d="M20,30 C35,30 25,20 50,20 C75,20 65,30 80,30 L100,30 L0,30 Z"
+              fill="rgba(237, 252, 255, 0.37)"
+            />
+          </svg>
+          <i
+            *ngIf="experience.opened"
+            style="font-size: 50px; top: 18px"
+            class="arrow top"
+          ></i>
+          <i
+            *ngIf="!experience.opened"
+            style="font-size: 50px; top: 18px"
+            class="arrow bottom"
+          ></i>
+        </div>
+
+        <div class="btn-shape-description">
+          <div class="experience-name">{{ experience.name2 }}</div>
+          <div class="experience-place">{{ experience.place2 }}</div>
+        </div>
       </div>
     </div>
-  </div> -->
+  </div>
 </div>
 
 <div class="experiences-container">
   <div
-    class="experience-item text-center"
+    class="contenedor experience-item text-center"
+    [ngClass]="{ closed: !experience.opened }"
     *ngFor="let experience of experiences.slice(3, 5)"
   >
-    <span class="experience-description">{{ experience.description }}</span>
-    <br />
-    <span class="experience-name">{{ experience.name }}</span>
-    <span class="experience-name">{{ experience.place }}</span>
+    <div
+      class="contenido experience-description"
+      [ngClass]="{ closed: !experience.opened }"
+    >
+      <p>{{ experience.description }}</p>
+    </div>
+    <div class="btn-experience" (click)="toggleExperience(experience)">
+      <div class="btn-shape-container">
+        <div class="btn-shape">
+          <svg
+            viewBox="0 0 100 50"
+            preserveAspectRatio="none"
+            style="width: 180px; top: -34px; left: 80px"
+          >
+            <path
+              d="M20,30 C35,30 25,20 50,20 C75,20 65,30 80,30 L100,30 L0,30 Z"
+              fill="rgba(237, 252, 255, 0.37)"
+            />
+          </svg>
+          <i
+            *ngIf="experience.opened"
+            style="font-size: 50px; top: 18px"
+            class="arrow top"
+          ></i>
+          <i
+            *ngIf="!experience.opened"
+            style="font-size: 50px; top: 18px"
+            class="arrow bottom"
+          ></i>
+        </div>
+
+        <div class="btn-shape-description">
+          <div class="experience-name">{{ experience.name2 }}</div>
+          <div class="experience-place">{{ experience.place2 }}</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -68,11 +99,18 @@
     <span>EMPRESAS QUE CONFÍAN EN NOSOTROS</span>
   </div>
 
-  <div class="companies text-center">
-    <img
-      class="image"
-      src="experiences/companies_enhanced.png"
-      alt="companies"
-    />
+  <div class="loop-slide">
+    <div>
+      <img
+        *ngFor="let logo of logos"
+        [src]="logo.src"
+        [alt]="logo.alt"
+      />
+      <img
+        *ngFor="let logo of logos"
+        [src]="logo.src"
+        [alt]="logo.alt"
+      />
+    </div>
   </div>
 </div>

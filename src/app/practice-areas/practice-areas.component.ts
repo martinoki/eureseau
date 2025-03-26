@@ -13,7 +13,7 @@ export class PracticeAreasComponent {
     {
       selected: true,
       image: 'practice-areas/briefcase.png',
-      title: 'ADMINISTRACION FINANCIERA Y ASESORAMIENTO EMPRESARIO.',
+      title: 'ADMINISTRACION FINANCIERA Y ASESORAMIENTO EMPRESARIO',
       description: [
         {
           type: 'text',
@@ -28,7 +28,7 @@ export class PracticeAreasComponent {
     {
       selected: false,
       image: 'practice-areas/bank.png',
-      title: 'AREA FINANCIERA Y BANCARIA.',
+      title: 'AREA FINANCIERA Y BANCARIA',
       description: [
         {
           type: 'bullet',
@@ -51,7 +51,7 @@ export class PracticeAreasComponent {
     {
       selected: false,
       image: 'practice-areas/handshake.png',
-      title: 'AREA SOCIETARIA.',
+      title: 'AREA SOCIETARIA',
       description: [
         {
           type: 'bullet',
@@ -64,6 +64,62 @@ export class PracticeAreasComponent {
         {
           type: 'bullet',
           text: 'Redacción y asesoramiento en actas de Asambleas, directorios, representaciones ante las autoridades de contralor (de acuerdo al objeto y naturaleza de la Sociedad). Controles de legalidad, directores, síndicos, gerentes, requisitos normativos y legales.',
+        },
+      ],
+    },
+    {
+      selected: false,
+      image: 'practice-areas/building.png',
+      title: 'AREA CONTENCIOSA EJECUTIVA EN PROPIEDAD HORIZONTAL',
+      description: [
+        {
+          type: 'bullet',
+          text: 'Asesoramiento en materia sucesoria, Testamentaria, ab intestato, cesiones de derechos hereditarios.',
+        },
+        {
+          type: 'bullet',
+          text: 'Búsqueda de bienes.',
+        },
+        {
+          type: 'bullet',
+          text: 'Sucesiones en el extranjero.',
+        },
+        {
+          type: 'bullet',
+          text: 'Liquidación de bienes.',
+        },
+      ],
+    },
+    {
+      selected: false,
+      image: 'practice-areas/medal.png',
+      title: 'CONCURSOS Y QUIEBRAS',
+      description: [
+        {
+          type: 'bullet',
+          text: 'Constitución de sociedades comerciales. Inscripción de sociedades extranjeras. Reforma de estatutos, empresas vinculadas. Emisión de obligaciones subordinadas, condiciones, procesos de emisión.',
+        },
+      ],
+    },
+    {
+      selected: false,
+      image: 'practice-areas/hammer.png',
+      title: 'ASPECTOS CONTENCIOSOS EN MATERIA LABORAL, COMERCIAL Y CIVIL',
+      description: [
+        {
+          type: 'bullet',
+          text: 'Constitución de sociedades comerciales. Inscripción de sociedades extranjeras. Reforma de estatutos, empresas vinculadas. Emisión de obligaciones subordinadas, condiciones, procesos de emisión.',
+        },
+      ],
+    },
+    {
+      selected: false,
+      image: 'practice-areas/paper.png',
+      title: 'DERECHO SUCESORIO',
+      description: [
+        {
+          type: 'bullet',
+          text: 'Constitución de sociedades comerciales. Inscripción de sociedades extranjeras. Reforma de estatutos, empresas vinculadas. Emisión de obligaciones subordinadas, condiciones, procesos de emisión.',
         },
       ],
     },

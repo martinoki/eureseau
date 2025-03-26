@@ -97,7 +97,7 @@
 
 .custom-card .circle-img {
   position: absolute;
-  top: -50px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
   /* border: 5px solid white; */
@@ -107,8 +107,8 @@
 }
 
 .custom-card .circle-img img {
-  width: 100px; /* Ajusta el tamaño del círculo */
-  height: 100px;
+  width: 118px; /* Ajusta el tamaño del círculo */
+  height: 118px;
   object-fit: cover;
 }
 
