@@ -77,6 +77,9 @@ export class ExperiencesComponent {
     { src: 'experiences/companies/ab_soluciones.png', alt: 'Ab Soluciones' },
     { src: 'experiences/companies/mastandrea.jpeg', alt: 'Mastandrea' },
     { src: 'experiences/companies/msf.jpeg', alt: 'MSF' },
+    { src: 'experiences/companies/gp&s_enhanced.png', alt: 'GPS&S' },
+    { src: 'experiences/companies/w&r_enhanced.png', alt: 'W&R' },
+    { src: 'experiences/companies/gestion_urbana_crop.jpeg', alt: 'Gestion Urbana' },
   ];
 
   items = ['ITEM 1', 'ITEM 2', 'ITEM 3', 'ITEM 4', 'ITEM 5'];

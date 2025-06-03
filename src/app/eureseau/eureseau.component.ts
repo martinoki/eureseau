@@ -160,29 +160,50 @@ export class EureseauComponent {
 
   events = [
     {
-      title: 'EVENTO EURESEAU BERLIN',
-      place: 'Berlin',
-      date: 'Abril, 2024',
-      image: 'berlin.png',
+      image: 'carousel2.png',
+      date: '10 Abril, 2017',
+      place: 'Paris',
+      title: 'Evento internacional Eureseau realizado en Paris',
     },
     {
-      title: 'COLOMBIA',
-      place: 'Bogotá',
-      date: 'Octubre, 2024',
-      image: 'bogota.png',
+      image: 'carousel1.png',
+      date: '5 Abril, 2017',
+      place: 'Sao Pablo',
+      title:
+        'Evento comunicacional internacional. Conferencia en Sao Pablo',
     },
     {
-      title: 'EVENTO COMUNICACIONAL CONFERENCIA',
-      place: 'San Pablo',
-      date: 'Octubre, 2019',
-      image: 'brasil.png',
+      image: 'carousel3.png',
+      date: '30 Marzo, 2023',
+      place: 'Buenos Aires',
+      title:
+        'Congreso de estudios en Latinoamerica, liderado por un integrante de nuestro equipo.',
     },
-    {
-      title: 'ARGENTINA',
-      place: 'Mendoza',
-      date: '30 Mayo, 2023',
-      image: 'mendoza.png',
-    },
+    // {
+    //   title: 'EVENTO EURESEAU BERLIN',
+    //   place: 'Berlin',
+    //   date: 'Abril, 2024',
+    //   image: 'berlin.png',
+    // },
+    // {
+    //   title: 'COLOMBIA',
+    //   place: 'Bogotá',
+    //   date: 'Octubre, 2024',
+    //   image: 'bogota.png',
+    // },
+    // {
+    //   title: 'EVENTO COMUNICACIONAL CONFERENCIA',
+    //   place: 'San Pablo',
+    //   date: 'Octubre, 2019',
+    //   image: 'brasil.png',
+    // },
+    // {
+    //   title: 'ARGENTINA',
+    //   place: 'Mendoza',
+    //   date: '30 Mayo, 2023',
+    //   image: 'mendoza.png',
+    // },
+
   ];
 
   column1: any[] = [];

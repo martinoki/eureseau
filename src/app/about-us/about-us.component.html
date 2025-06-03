@@ -91,7 +91,16 @@
       {{ selectedTitular.cargo }}
     </div>
     <div class="description collapse show" id="collapseExample">
-      {{ selectedTitular.description }}
+      <ng-container *ngFor="let item of selectedTitular.description">
+          <ul *ngIf="item.type === 'list'">
+            <li *ngFor="let bullet of item.text">
+              <span>{{ bullet }}</span>
+            </li>
+          </ul>
+          <p style="text-decoration: underline;" *ngIf="item.type === 'title'">
+            {{ item.text }}
+          </p>
+      </ng-container>
     </div>
     <div class="arrow-container">
       <a
@@ -134,10 +143,10 @@
 </div>
 
 <div class="eureseau-welcome">
-  <div class="eureseau-welcome-title text-center">
+  <!-- <div class="eureseau-welcome-title text-center">
     Bienvenidos a Eureseau, el estudio jurídico dedicado a la excelencia en el
     ámbito del derecho laboral.
-  </div>
+  </div> -->
 
   <div *ngFor="let item of eureseauText">
     <div class="eureseau-welcome-text text-center">

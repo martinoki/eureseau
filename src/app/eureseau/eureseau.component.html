@@ -73,11 +73,11 @@
       >
         <div class="representative-item" *ngFor="let item of column">
           <h5>{{ item.country }}</h5>
-          <span class="representative-link">
+          <!-- <span class="representative-link">
             <a [href]="item.representatives.link" target="_blank">{{
               item.representatives.text
             }}</a>
-          </span>
+          </span> -->
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@
 
   <div class="events-container-items">
     <div class="event-item" *ngFor="let event of events">
-      <img width="270px" src="events/{{ event.image }}" alt="{{ event.title }}" />
+      <img width="270px" height="200px" src="events/{{ event.image }}" alt="{{ event.title }}" />
       <div class="event-item-title">{{ event.title }}</div>
       <div class="event-item-place">{{ event.place }}</div>
       <div class="event-item-date">{{ event.date }}</div>
