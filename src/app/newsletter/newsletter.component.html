@@ -1,0 +1,12 @@
+<div *ngFor="let item of newsletterData">
+  <div class="section">{{ item.section }}</div>
+  <div class="newsletter-container">
+    <div *ngFor="let page of item.pages">
+      <div *ngIf="page?.date" class="date">{{ page.date }}</div>
+      <div class="title">{{ page.title }}</div>
+      <div class="text" [innerHTML]="page.text"></div>
+      <div class="divider"></div>
+    </div>
+    <div class="divider"></div>
+  </div>
+</div>

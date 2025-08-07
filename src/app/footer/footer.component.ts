@@ -18,12 +18,6 @@ export class FooterComponent {
       text: `Calle Uruguay Nº 390, piso 15, Of. "F" y "G" C.P. (1015) - Ciudad Autónoma de Buenos Aires, Argentina`,
     },
     {
-      title: 'Telefono',
-      alt: 'Phone',
-      icon: 'phone.png',
-      text: '(5411) 4373-0861',
-    },
-    {
       title: 'Celulares de contacto',
       alt: 'Phone',
       icon: 'phone.png',

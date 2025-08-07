@@ -1,6 +1,9 @@
 .navbar-nav > li {
   padding-left: 30px;
   padding-right: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .header {
@@ -40,6 +43,6 @@
 }
 
 .nav-item{
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-wrap-mode: nowrap;
 }

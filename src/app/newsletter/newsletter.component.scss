@@ -1,0 +1,72 @@
+.newsletter-container {
+  border-left: 10rem solid rgba(0, 35, 102, 1);
+  border-right: 10rem solid rgba(0, 35, 102, 1);
+}
+
+.section {
+  background: rgb(70, 130, 180);
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-left: 10rem solid rgba(0, 35, 102, 1);
+  border-right: 10rem solid rgba(0, 35, 102, 1);
+  border-top: 2rem solid rgba(0, 35, 102, 1);
+}
+
+.date {
+  font-family: "Pontano";
+  font-size: 14px;
+  line-height: 100%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.title {
+  font-family: "Pontano";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.text {
+  font-family: 'Pontano';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.divider {
+  height: 1rem;
+  background: rgba(0, 35, 102, 1);
+}
+
+.newsletter-container > .divider {
+  height: 2rem;
+}
+
+@media (max-width: 768px) {
+  .newsletter-container {
+    border-left: 2rem solid rgba(0, 35, 102, 1);
+  border-right: 2rem solid rgba(0, 35, 102, 1);
+  }
+
+  .section {
+    border-left: 2rem solid rgba(0, 35, 102, 1);
+    border-right: 2rem solid rgba(0, 35, 102, 1);
+  }
+  
+}
